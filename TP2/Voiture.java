@@ -9,6 +9,11 @@ public class Voiture extends Vehicule {
         this.nbPortes = nbPortes;
     }
 
+    public Voiture(String marque, String modele) {
+        super(marque, modele, 0);
+        this.nbPortes = 4;
+    }
+
     @Override
     public void demarrer() {
         System.out.println("La voiture démarre en tournant la clé.");
